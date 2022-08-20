@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <title>Assis - Matemática</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    </head>
+    <style>
+        div.form{
+            margin-left: -20px;
+        }
+      form{
+        background-color: rgb(18, 22, 18);
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: flex;
+        margin: 40px;
+        border: 5px solid rgb(41, 177, 81)
+      }
+      .resultado_certo{
+        background-color: rgb(41, 177, 81);
+        padding: 5px;
+        color: #fff;
+        margin-right: 80%;
+      }
+      .resultado_errado{
+        background: rgb(177, 41, 81);
+        padding: 5px;
+        margin-right: 80%;
+        color: #fff;
+      }
+    </style>
+    <body>
+        <div>
+        <header>
+        <nav>
+        <a class="logo" href="index.html"><img src=assis_logo.png alt="Assis" width="100px"></a>
+        <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+        </div class="mobile-menu">
+        <ul class="nav-list">
+        <li><a href="index4.html">Sobre</a></li>
+        </ul>
+        </nav>
+        </header>
+        <script type="text/javascript" src="main.js"></script>
+        <div>
+            <h1>Matemática</h1>
+            <h2>A matemática é a matéria que se utiliza para resolver qualquer problema real por meio de números</h2>
+            <p>Um dos campos fundamentais para o ser humano atualmente, a matemática é frequentemente percebida por todo o planeta Terra. A matemática possui muitas ramificações, então, falaremos no ínicio.</p>
+            <p>A matemática tem dez príncipais "números" (o que expressa a quantidade), que são: 0, 1, 2, 3, 4, 5, 6, 7, 8 e 9. Os números são muito fundamentais para se iniciar uma contagem.</p>
+            <p>Na matemática, há duas formas príncipais de utiliza-la, por meio da adição e da subtração, brevemente, iremos apenas falar da adição agora.</p>
+            <h2>Adição, parcela e soma</h2>
+            <p>Basicamente, a adição detém três fatores diferenciais da subtração, seu sinal príncipal, também conhecido como "+" ou mais (o que justifica a adição), a parcela (a quantidade que irá se juntar) e a soma (a quantidade juntada depois do sinal de = [igual])</p>
+            <p>Exemplo: 1 (primeira parcela) + 1 (segunda parcela) = 2 (soma)</p>
+            <h2>Atividade</h2>
+        </div>
+            <div class="container">
+            <div class="row">
+                <div class="form">
+                <form method="POST" id="awnser">
+                    <h2>Quanto é 2 + 5?</h2>
+                    <p>
+                        <input type="radio" id="a" name="resposta" value="a">
+                        <label for="a">A) 25</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="b" name="resposta" value="b">
+                        <label for="b">B) -3</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="c" name="resposta" value="c" data-resultado="true">
+                        <label for="c">C) 7</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="d" name="resposta" value="d">
+                        <label for="d">D) 10</label>
+                    </p>
+                    <input type="submit" name="Check" value="Checar">
+                </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

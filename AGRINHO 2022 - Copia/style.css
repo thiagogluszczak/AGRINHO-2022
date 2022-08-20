@@ -1,0 +1,169 @@
+body{
+    background-color: rgb(63, 68, 63);
+    overflow-x: hidden;
+}
+main{
+    background: rgb(27, 29, 27);
+    border: 5px solid black;
+    max-width: 500px;
+    width: 75%;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    color:#2ab156c2;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 60px;
+    text-align: center;
+    font-size: 85px;
+    text-decoration-line: underline;
+    text-shadow: 0.1em 0.1em rgb(41, 107, 86)
+}
+h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(116, 212, 148, 0.76);
+    font-size: 35px;
+}
+p{
+    font-size: 25px;
+    color: rgb(41, 177, 86);
+    align-self: initial;
+    margin-left: 10px;
+}
+ul.subject{
+    color: rgb(41, 177, 86);
+}
+div{
+    background-color: rgb(63, 68, 63);
+}
+div.b{
+    text-align: center;
+    font-size: 60px;
+    color: rgb(41, 177, 86);
+}
+a:link{
+    color: rgb(41, 177, 86);
+}
+a:hover{
+    color: rgba(3, 93, 33, 0.76);
+    opacity: 0.7;
+}
+a:visited{
+    color: rgb(41, 177, 86);
+    background-color: transparent;
+    text-decoration: none;
+}
+header{
+    border-style: solid;
+    border-width: 5px;
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -10px;
+    background: rgb(27, 29, 27);
+    size: 12vh;
+}
+a.logo{
+    font-size: 24px;
+    letter-spacing: 4px;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+.nav-list li{
+    letter-spacing: 1px;
+    margin-left: 32px;
+    text-decoration: none;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+}
+li{
+    font-size: 25px;
+}
+@media (max-width: 999px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav-list{
+        position: absolute;
+        top: 12vh;
+        right: -1vh;
+        width: 30vh;
+        height: 68vh;
+        background: rgb(27, 29, 27);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        overflow-x: hidden;
+        border-style: solid;
+        border-color: black;
+    }
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu{
+        display: block;
+    }
+}
+.nav-list.active{
+    transform: translateX(0)
+}
+
+@keyframes navLinkFade{
+    from {
+       opacity: 0;
+       transform: translateX(50px);
+    }
+    to {
+       opacity: 1;
+       transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+.mobile-menu.active .line2{
+    opacity: 0;
+}
+.mobile-menu.active .line3{
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+div.central{
+    text-align: center;
+    align-items: center;
+}
+p.concurso{
+    padding-top: 80px;
+}
+input[type=submit]{
+    width: 200px;
+    border-radius: 32px;
+    align-self: center;
+    background-color: rgb(63, 68, 63);
+    color: rgb(41, 177, 86);
+}
